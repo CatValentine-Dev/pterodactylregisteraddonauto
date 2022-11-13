@@ -276,11 +276,16 @@
     }
 
     body {
-        font-family: Rubik, -apple-system, BlinkMacSystemFont, "Helvetica Neue", Roboto, system-ui, sans-serif;
+        font-family: Rubik, -apple-system, BlinkMacSystemFont, "Helvetica Neue">
         --tw-bg-opacity: 1;
-        background-color: rgba(51, 64.175, 76.5, var(--tw-bg-opacity));
+        background-color: transparent;
         --tw-text-opacity: 1;
         color: rgba(201.756, 209.1, 216.444, var(--tw-text-opacity));
+        background-image: url("https://casaos.moderncraft.fun/v1/file?token=eyJ>
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
         letter-spacing: 0.015em;
       }
     
