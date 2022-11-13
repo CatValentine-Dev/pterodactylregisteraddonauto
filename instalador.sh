@@ -11,21 +11,21 @@ instalaraddon(){
     echo -e "${CYAN}Instalando temas..."
     cd /var/www/pterodactyl
     rm -r pterodactylregisteraddonauto
-    git clone https://github.com/CatValentine-Dev/pterodactylregisteraddonauto.git
-    cd pterodactylregisteraddonauto
     rm -rf /var/www/pterodactyl/app/Providers/RouteServiceProvider.php
     rm -rf /var/www/pterodactyl/app/Http/Controllers/Auth/RegisterController.php
     rm -rf /var/www/resources/scripts/components/auth/LoginContainer.tsx
     rm -rf /var/www/pterodactyl/resources/views/templates/auth/register.blade.php
     rm -rf /var/www/pterodactyl/routes/register_module.php
+    rm -rf /var/www/pterodactyl/public/modules
+    rm -rf /var/www/pterodactyl/public/modules/register.css
+    mkdir /var/www/pterodactyl/public/modules
+    git clone https://github.com/CatValentine-Dev/pterodactylregisteraddonauto.git
+    cd pterodactylregisteraddonauto
     mv RouteServiceProvider.php /var/www/pterodactyl/app/Providers/
     mv RegisterController.php /var/www/pterodactyl/app/Http/Controllers/Auth/
     mv LoginContainer.tsx /var/www/pterodactyl/app/Http/Controllers/Auth/
     mv register.blade.php /var/www/pterodactyl/resources/views/templates/auth/
     mv register_module.php /var/www/pterodactyl/routes/
-    rm -rf /var/www/pterodactyl/public/modules
-    mkdir /var/www/pterodactyl/public/modules
-    rm -rf /var/www/pterodactyl/public/modules/register.css
     mv register.css /var/www/pterodactyl/public/modules/
     cd /var/www/pterodactyl
 
