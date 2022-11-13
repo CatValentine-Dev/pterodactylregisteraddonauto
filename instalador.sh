@@ -19,6 +19,8 @@ instalaraddon(){
     rm -rf /var/www/pterodactyl/public/modules
     rm -rf /var/www/pterodactyl/public/modules/register.css
     mkdir /var/www/pterodactyl/public/modules
+    mkdir /var/www/pterodactyl/public/modules/register/
+    mkdir /var/www/pterodactyl/public/modules/register/css
     git clone https://github.com/CatValentine-Dev/pterodactylregisteraddonauto.git
     cd pterodactylregisteraddonauto
     mv RouteServiceProvider.php /var/www/pterodactyl/app/Providers/
@@ -26,7 +28,7 @@ instalaraddon(){
     mv LoginContainer.tsx /var/www/pterodactyl/app/Http/Controllers/Auth/
     mv register.blade.php /var/www/pterodactyl/resources/views/templates/auth/
     mv register_module.php /var/www/pterodactyl/routes/
-    mv register.css /var/www/pterodactyl/public/modules/
+    mv register.css /var/www/pterodactyl/public/modules/register/css/
     cd /var/www/pterodactyl
 
     curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -
