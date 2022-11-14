@@ -8,7 +8,7 @@ fi
 clear
 
 instalaraddon(){
-    echo -e "${CYAN}Instalando temas..."
+    echo -e "${CYAN}Instalando addon..."
     cd /var/www/pterodactyl
     rm -r pterodactylregisteraddonauto
     rm -rf /var/www/pterodactyl/app/Providers/RouteServiceProvider.php
@@ -48,7 +48,7 @@ instalaraddon(){
 
 instaladordetemas(){
     while true; do
-        read -p "Tem certeza de que deseja instalar o tema [y/n]? " yn
+        read -p "Tem certeza de que deseja instalar o addon [y/n]? " yn
         case $yn in
             [Yy]* ) instalaraddon; break;;
             [Nn]* ) exit;;
