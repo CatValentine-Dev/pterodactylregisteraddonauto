@@ -33,7 +33,7 @@ english(){
     echo -e "${CYAN}[3] English"
     echo -e "${CYAN}[4] Exit"
     
-read -p "Insira um numero: " choice
+read -p "Enter a Number: " choice
 if [ $choice == "1" ]
     then
     portuguese
